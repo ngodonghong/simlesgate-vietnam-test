@@ -1,0 +1,49 @@
+.mainLayout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .topNavBar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: $fixedZIndex;
+        display: flex;
+        justify-content: space-between;
+        background-color: $secondaryColor;
+        padding: 16px 8px;
+
+        .heading {
+            display: flex;
+            align-items: flex-end;
+            gap: 8px;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .topBarAction {
+            @extend .heading;
+            display: none;
+            align-items: center;
+        }
+    }
+
+    .mainContent {
+        margin-top: 64px;
+        padding: 8px;
+    }
+}
+
+@media only screen and (min-width: $md) {
+    .mainLayout {
+        .topBarAction{
+            display: flex;
+        }
+        .mainContent {
+            padding: 16px;
+        }
+    }
+}

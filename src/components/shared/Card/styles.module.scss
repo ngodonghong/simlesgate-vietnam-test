@@ -1,0 +1,26 @@
+.card {
+  background-color: $white;
+  border-radius: 4px;
+  box-shadow: $boxShadow;
+
+  .cardMedia {
+    img {
+      width: 100%;
+      border-radius: 4px;
+      object-fit: contain;
+    }
+  }
+
+  .cardContent {
+    padding: 8px;
+
+    .cardHeader {
+      .title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 600;
+      }
+    }
+  }
+}

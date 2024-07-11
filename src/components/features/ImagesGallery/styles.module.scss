@@ -1,0 +1,22 @@
+.imagesGallery {
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-gap: 1.5rem;
+
+    @media only screen and (min-width: $sm) {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));   
+    }
+
+    @media only screen and (min-width: $md) {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));   
+    }
+
+    @media only screen and (min-width: $lg) {
+        grid-template-columns: repeat(4, minmax(200px, 1fr));   
+    }
+
+    @media only screen and (min-width: $xl) {
+        grid-template-columns: repeat(6, minmax(200px, 1fr));   
+    }
+}
