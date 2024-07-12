@@ -39,7 +39,7 @@
 
 @media only screen and (min-width: $md) {
     .mainLayout {
-        .topBarAction{
+        .topNavBar .topBarAction {
             display: flex;
         }
         .mainContent {

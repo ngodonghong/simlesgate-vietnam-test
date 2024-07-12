@@ -1,26 +1,40 @@
 .card {
-  background-color: $white;
-  border-radius: 4px;
-  box-shadow: $boxShadow;
+    background-color: $white;
+    border-radius: 4px;
+    box-shadow: $boxShadow;
 
-  .cardMedia {
-    img {
-      width: 100%;
-      border-radius: 4px;
-      object-fit: contain;
+    .cardMedia {
+        img {
+            width: 100%;
+            border-radius: 4px;
+            object-fit: cover;
+            aspect-ratio: 3/2;
+        }
     }
-  }
 
-  .cardContent {
-    padding: 8px;
+    .cardContent {
+        padding: 8px;
 
-    .cardHeader {
-      .title {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-weight: 600;
-      }
+        .cardHeader {
+            .title {
+                font-size: 14px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-weight: 600;
+            }
+        }
     }
-  }
+}
+
+@media only screen and (min-width: $md) {
+    .card {
+        .cardContent {
+            .cardHeader {
+                .title {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }
